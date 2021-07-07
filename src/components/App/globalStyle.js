@@ -6,24 +6,24 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
-    src: local('SF Pro Display Regular'),
-         url('/assets/fonts/SFProDisplay-Regular.woff2') format('woff2')
+    font-display: swap;
+    src: url('/assets/fonts/SFProDisplay-Regular.woff2') format('woff2')
   }
 
   @font-face {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 500;
-    src: local('SF Pro Display Medium'),
-         url('/assets/fonts/SFProDisplay-Medium.woff2') format('woff2')
+    font-display: swap;
+    src: url('/assets/fonts/SFProDisplay-Medium.woff2') format('woff2')
   }
 
   @font-face {
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 600;
-    src: local('SF Pro Display Medium'),
-         url('/assets/fonts/SFProDisplay-Semibold.woff2') format('woff2')
+    font-display: swap;
+    src: url('/assets/fonts/SFProDisplay-Semibold.woff2') format('woff2')
   }
 
   /* Указываем box sizing */
@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
-    font-family: 'SF Pro Display';
+    font-family: 'SF Pro Display', sans-serif;
   }
 
   /* Убираем внутренние отступы и стилизацию */

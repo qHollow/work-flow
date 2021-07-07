@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 const CustomButton = styled.button`
+  position: relative;
   width: ${(props) => props.w}px;
   height: ${(props) => props.h}px;
   display: flex;
@@ -29,7 +30,7 @@ const CustomButton = styled.button`
         background-color: #c2cfe0;
         opacity: 0.4;
       }
-    `}
+    `};
 
   ${(props) =>
     props.model === "secondary" &&
@@ -41,7 +42,7 @@ const CustomButton = styled.button`
         opacity: 0.4;
         background-color: #c2cfe0;
       }
-    `}
+    `};
 
   ${(props) =>
     props.model === "tertiary" &&
@@ -51,8 +52,8 @@ const CustomButton = styled.button`
       &:disabled {
         opacity: 0.4;
       }
-    `}
-  
+    `};
+
   &:focus,
   &:hover {
     filter: brightness(105%);
@@ -63,12 +64,12 @@ const CustomButton = styled.button`
   }
 `;
 
-const Button = ({ model = "primary", children, ...styles }) => {
+const Button = ({ model = "primary", children, notification, ...styles }) => {
   return (
-    <CustomButton model={model} {...styles}>
-      {children}
-    </CustomButton>
+      <CustomButton model={model} {...styles}>{children}</CustomButton>
   );
 };
+
+
 
 export default Button;

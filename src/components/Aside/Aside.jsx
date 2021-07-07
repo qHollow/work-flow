@@ -1,5 +1,7 @@
 import styled from "styled-components";
+
 import Button from "../Button";
+import Notification from "../Notification";
 
 const SideBar = styled.aside`
   background-color: #fff;
@@ -100,20 +102,7 @@ const Aside = () => {
           </Button>
         </ListItem>
         <ListItem>
-          <Button
-            w={32}
-            h={32}
-            model={"secondary"}
-            bgcolor={"#F6F6F6"}
-            textColor={"F6F6F6"}
-          >
-            <img
-              src="/assets/icons/ring.svg"
-              alt="Notifications"
-              width="16"
-              height="20"
-            />
-          </Button>
+         <Notification count={100}/>
         </ListItem>
         <ListItem>
           <Profile>
