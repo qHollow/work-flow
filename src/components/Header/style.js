@@ -5,8 +5,6 @@ import { color } from "../../styles/colors";
 const Wrapper = styled.header`
   min-width: 228px;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
   background-color: ${color.white};
 `;

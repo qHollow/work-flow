@@ -6,8 +6,6 @@ const Wrapper = styled.div`
 `;
 
 const WrapperColumn = styled.div`
-  display: flex;
-  flex-direction: column;
   flex: 1;
 `;
 
