@@ -1,16 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import styled from "styled-components";
 import GlobalStyle from "./globalStyle";
+import { Wrapper, WrapperColumn } from "./style";
 
 import Header from "./components/Header";
 import Aside from "./components/Aside";
 
 import Dashboard from "./pages/Dashboard";
-
-const Wrapper = styled.div`
-  display: flex;
-  background-color: #FAFAFA;
-`;
 
 const App = () => {
   return (
@@ -19,15 +14,17 @@ const App = () => {
       <Router>
         <Wrapper>
           <Header />
-          <Aside />
-          <Switch>
-            <Route path="/" exact>
-              <Dashboard />
-            </Route>
-            <Route>
-              <Dashboard />
-            </Route>
-          </Switch>
+          <WrapperColumn>
+            <Aside />
+            <Switch>
+              <Route path="/" exact>
+                <Dashboard />
+              </Route>
+              <Route>
+                <Dashboard />
+              </Route>
+            </Switch>
+          </WrapperColumn>
         </Wrapper>
       </Router>
     </>

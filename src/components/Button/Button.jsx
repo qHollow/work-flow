@@ -1,6 +1,6 @@
 import CustomButton from "./style";
 
-const Button = ({ model = "primary", children, notification, ...styles }) => {
+const Button = ({ model = "primary", children, ...styles }) => {
   return (
       <CustomButton model={model} {...styles}>{children}</CustomButton>
   );
