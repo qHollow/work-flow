@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { color } from "../../styles/colors";
 
 const Wrapper = styled.header`
   min-width: 228px;
@@ -7,7 +8,7 @@ const Wrapper = styled.header`
   display: flex;
   flex-direction: column;
   box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
-  background-color: #ffffff;
+  background-color: ${color.white};
 `;
 
 const Logo = styled(Link)`
@@ -24,7 +25,7 @@ const LogoText = styled.p`
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.01em;
-  color: #109cf1;
+  color: ${color.accentBlue};
 `;
 
 const Nav = styled.nav`
@@ -66,11 +67,11 @@ const NavLink = styled(Link)`
       rgba(196, 196, 196, 0) 100%
     );
 
-    border-right: 3px solid #109cf1;
+    border-right: 3px solid ${color.accentBlue};
 
     path,
     rect {
-      stroke: #109cf1;
+      stroke: ${color.accentBlue};
     }
   }
 `;
@@ -81,7 +82,7 @@ const NavText = styled.p`
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
-  color: #334d6e;
+  color: ${color.darkBlue};
 `;
 
 export {

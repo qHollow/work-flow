@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { color } from "../../styles/colors";
 
 import Button from "../Button";
 
@@ -19,7 +20,7 @@ const NotificationAlert = styled.div`
   top: 0;
   margin-left: 17px;
   color: #ffffff;
-  background-color: #109cf1;
+  background-color: ${color.accentBlue};
   width: max-content;
   height: 16px;
   border-radius: 10px;
@@ -38,9 +39,9 @@ const Notification = ({ count }) => {
       <Button
         w={32}
         h={32}
-        bgcolor={"#F6F6F6"}
+        bgcolor={color.lightGray}
         model={"secondary"}
-        textColor={"#F6F6F6"}
+        textColor={color.lightGray}
       >
         <img src="/assets/icons/ring.svg" alt="Notification" />
       </Button>

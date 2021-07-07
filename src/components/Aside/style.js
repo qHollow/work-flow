@@ -1,8 +1,8 @@
 import styled from "styled-components";
-
+import {color} from "../../styles/colors";
 
 const SideBar = styled.aside`
-background-color: #FFFFFF;
+background-color: ${color.white};
 width: 100%;
 height: 60px;
 display: flex;
@@ -25,7 +25,7 @@ transition: all 0.2s ease-in-out;
 
 &:focus,
 &:hover {
-  background-color: #f5f8fa;
+  background-color: ${color.lightGray};
   outline: none;
 }
 `;
@@ -45,7 +45,7 @@ padding: 0;
 display: flex;
 align-items: center;
 border: none;
-background-color: #FFFFFF;
+background-color: ${color.white};
 cursor: pointer;
 margin-right: 23px;
 `;
@@ -62,7 +62,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 19px;
 letter-spacing: 0.01em;
-color: #192A3E;
+color: ${color.black};
 margin-right: 5px;
 
 &::after {

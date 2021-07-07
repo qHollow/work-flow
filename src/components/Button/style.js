@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import {color} from "../../styles/colors";
 
 const CustomButton = styled.button`
   position: relative;
@@ -23,11 +24,11 @@ const CustomButton = styled.button`
     props.model === "primary" &&
     css`
       box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
-      background-color: ${(props) => props.bgcolor || "#109CF1"};
-      color: ${(props) => props.textColor || "#FFFFFF"};
+      background-color: ${(props) => props.bgcolor || color.accentBlue};
+      color: ${(props) => props.textColor || color.white};
 
       &:disabled {
-        background-color: #c2cfe0;
+        background-color: ${color.iconGray};
         opacity: 0.4;
       }
     `};
@@ -35,20 +36,20 @@ const CustomButton = styled.button`
   ${(props) =>
     props.model === "secondary" &&
     css`
-      background-color: ${(props) => props.bgcolor || "#FFFFFF"};
-      color: ${(props) => props.textColor || "#109CF1"};
-      border: 1px solid ${(props) => props.textColor || "#109CF1"};
+      background-color: ${(props) => props.bgcolor || color.white};
+      color: ${(props) => props.textColor || color.accentBlue};
+      border: 1px solid ${(props) => props.textColor || color.accentBlue};
       &:disabled {
         opacity: 0.4;
-        background-color: #c2cfe0;
+        background-color: ${color.iconGray};
       }
     `};
 
   ${(props) =>
     props.model === "tertiary" &&
     css`
-      background-color: #ffffff;
-      color: ${(props) => props.textColor || "#109CF1"};
+      background-color: ${color.white};
+      color: ${(props) => props.textColor || color.accentBlue};
       &:disabled {
         opacity: 0.4;
       }
