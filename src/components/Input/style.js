@@ -12,6 +12,11 @@ const Label = styled.label`
   top: 18px;
   left: 0;
   opacity: 0.5;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: ${color.tableBlack};
 `;
 
 const CustomInput = styled.input`
@@ -24,10 +29,11 @@ const CustomInput = styled.input`
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 0.01em;
-  opacity: 0.5;
   outline: none;
+  transition: all 0.3s ease-in-out;
 
-  &:focus {
+  &:focus,
+  &:hover {
     border-bottom: 1px solid ${color.gray};
     opacity: 1;
   }
@@ -35,8 +41,12 @@ const CustomInput = styled.input`
   &:focus ~ ${Label},
   &:not(:placeholder-shown) ~ ${Label}{
     top: 0;
-    color: ${color.accentBlue};
     font-size: 11px;
+  }
+
+  &:hover ~ ${Label},
+  &:focus ~ ${Label} {
+    color: ${color.accentBlue};
   }
 `;
 
