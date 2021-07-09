@@ -1,12 +1,12 @@
-import { CustomInput, Wrapper, Label } from "./style";
+import { CustomInput, Label, Title } from './style';
 
-const Input = ({name = "Name", type = "text"}) => {
-  return (
-    <Wrapper>
-      <CustomInput type={type} placeholder=" " name={name} id={name}/>
-      <Label for={name}>{name}</Label>
-    </Wrapper>
-  );
+const Input = ({ name = 'Name', type = 'text' }) => {
+	return (
+		<Label>
+			<CustomInput type={type} placeholder=' ' />
+			<Title>{name}</Title>
+		</Label>
+	);
 };
 
 export default Input;
