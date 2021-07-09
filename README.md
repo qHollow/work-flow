@@ -2,7 +2,7 @@
 
 WorkFlow — is a system for team management, allowing you to keep the path of work process and indicate progress of the projects with a simplified system of internal corporate communication.  
 
-![](https://img.shields.io/badge/version-0.1a-yellow)  
+![](https://img.shields.io/badge/version-0.1.0-yellow)  
 
 ## Capabilities  
 

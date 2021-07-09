@@ -1,0 +1,8 @@
+{
+  "extends": ["eslint:recommended","react-app", "react-app/jest"],
+  "rules": {
+    "semi": ["warn", "always"],
+    "quotes": ["error", "single"],
+    "eqeqeq": ["error", "always"]
+  }
+}

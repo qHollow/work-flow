@@ -1,9 +1,11 @@
-import CustomButton from "./style";
+import CustomButton from './style';
 
-const Button = ({ model = "primary", children, ...styles }) => {
-  return (
-      <CustomButton model={model} {...styles}>{children}</CustomButton>
-  );
+const Button = ({ model = 'primary', children, ...styles }) => {
+	return (
+		<CustomButton model={model} {...styles}>
+			{children}
+		</CustomButton>
+	);
 };
 
 export default Button;
